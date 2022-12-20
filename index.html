@@ -8,18 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script type="text/javascript" src="style.js"></script>
         <div class="top">
           <div class="logo">
             <div class="logo-img">
-            <i class="far fa-paper-plane"></i>
             </div>Aircraft Repair Station
           </div>
           <div class="navbar">
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="./createro.html">Create Repair Order</a></li>
-              <li><a href="#">RO Lookup</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="./indexc.html">Chat</a></li>
             </ul>
           </div>
         </div>
@@ -30,11 +29,26 @@
             We offer a wide range of services and repairs for both single and multi.-engine piston craft, and general maintenance repairs.
             <p>Annual Inspections, Pre-purchase Inspection, Propeller Balancing, Corrosion, X-Treatment</p>
             <p>Our mechanics are trained and certified to provide service on aircrafts such as the Beechcraft, Cessna, Piper, and Mooney</p>
+        
           </div>
         </div>
         
-        
-  
-       
+
+        <button class="open-button"onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="form.php" class="form-container" method="post">
+   <i class="fa-solid fa-chalkboard-user"></i> <h3>Chat with us</h3>
+
+    <label for="msg">Message</label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn" onclick="return myFunc1()">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  <section></section>
+
+    
+  </form>
+</div>
 </body>
 </html>
